@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogTech — Navbar</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav-inner">
+        <!-- Logo -->
+        <a href="#" class="nav-logo">BlogTech</a>
+
+        <!-- Links -->
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Artigos</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+
+        <!-- Ações -->
+        <div class="nav-actions">
+          <a href="#" class="btn-entrar">Entrar</a>
+          <button class="btn-search">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </div>
+
+        <button class="btn-hamburger">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="inicio">
+        <div class="hero-container">
+          <div class="hero-titulo-wrapper">
+            <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-valor">500 Comentários</span>
+              <span class="stat-descricao">Interação ativa</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-valor">10k Visualizações</span>
+              <span class="stat-descricao">Alcance global</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de conteúdo principal: grade de artigos e barra lateral (Prática 03) -->
+      <section class="main-section">
+        <div class="content-container">
+          <!-- grade de artigos -->
+          <div class="posts-container">
+            <article class="post-card">
+              <img
+                src="./img/post_1.jpg"
+                alt="TVs de tubo com o logo da SEGA acima"
+              />
+
+              <div class="post-content">
+                <span class="post-date">12 AGO 2026</span>
+                <h2>História da SEGA</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  delectus deleniti explicabo voluptatibus sapiente facilis
+                  eligendi. Distinctio facere provident repellat beatae dolores
+                  assumenda molestias tenetur, eos placeat ad sunt aut?
+                </p>
+
+                <a href="">Leia mais...</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- barra lateral -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <a href="./index.html" class="footer-brand">BlogTech</a>
+
+        <nav class="footer-nav" aria-label="Links institucionais">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <p class="footer-copy">
+          © 2026 BlogTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let menu = document.querySelector(".btn-hamburger");
+      let nav = document.querySelector(".nav-inner");
+
+      menu.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
